@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.c2306l.javafxe1.Controller.MenuController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <BorderPane fx:id="mainBorderPane" focusTraversable="true" layoutX="5.0" layoutY="3.0"
+                    maxHeight="-Infinity"
+                    maxWidth="-Infinity"
+                    minHeight="-Infinity"
+                    minWidth="-Infinity"
+                    nodeOrientation="LEFT_TO_RIGHT">
+            <top>
+                <MenuBar id="mainMenu" BorderPane.alignment="TOP_LEFT">
+                    <menus>
+                        <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem fx:id="category" mnemonicParsing="false" onAction="#openCategory"
+                                          text="Category"/>
+                                <MenuItem fx:id="product" mnemonicParsing="false" onAction="#openProduct"
+                                          text="Product"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Edit">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Delete"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About"/>
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </top>
+        </BorderPane>
+    </children>
+</AnchorPane>
