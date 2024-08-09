@@ -1,4 +1,4 @@
-package com.c2306l.myproject.Controller;
+package com.c2306l.javafxe3.Controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -24,7 +24,7 @@ public class LayoutController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         mnCategoryList.setOnAction(event -> {
             //load view Category
-            getContentPane("/com/c2306l/myproject/category.fxml");
+            getContentPane("com/c2306l/javafxe3/category.fxml");
         });
     }
     @FXML

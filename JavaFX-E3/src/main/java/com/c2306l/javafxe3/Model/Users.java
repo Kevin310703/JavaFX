@@ -1,5 +1,5 @@
-package com.c2306l.myproject.Model;
-import com.c2306l.myproject.IGeneric.IService;
+package com.c2306l.javafxe3.Model;
+import com.c2306l.javafxe3.IGeneric.IService;
 import javafx.collections.ObservableList;
 
 import java.sql.Connection;
@@ -7,11 +7,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class Users implements IService<com.c2306l.myproject.Entity.Users> {
+public class Users implements IService<com.c2306l.javafxe3.Entity.Users> {
     private static final Connection conn = MySQLConnection.getConnection();
-    public static com.c2306l.myproject.Entity.Users findByUserName(String userName) {
+    public static com.c2306l.javafxe3.Entity.Users findByUserName(String userName) {
         String sql = "select password from users where username = ?";
-        com.c2306l.myproject.Entity.Users user = new com.c2306l.myproject.Entity.Users();
+        com.c2306l.javafxe3.Entity.Users user = new com.c2306l.javafxe3.Entity.Users();
         try{
             PreparedStatement pst = conn.prepareStatement(sql);
             pst.setString(1, userName);
@@ -26,27 +26,27 @@ public class Users implements IService<com.c2306l.myproject.Entity.Users> {
         return user;
     }
     @Override
-    public void insert(com.c2306l.myproject.Entity.Users users) {
+    public void insert(com.c2306l.javafxe3.Entity.Users users) {
 
     }
 
     @Override
-    public void remove(com.c2306l.myproject.Entity.Users users) {
+    public void remove(com.c2306l.javafxe3.Entity.Users users) {
 
     }
 
     @Override
-    public void edit(com.c2306l.myproject.Entity.Users users) {
+    public void edit(com.c2306l.javafxe3.Entity.Users users) {
 
     }
 
     @Override
-    public com.c2306l.myproject.Entity.Users findById(com.c2306l.myproject.Entity.Users users) {
+    public com.c2306l.javafxe3.Entity.Users findById(com.c2306l.javafxe3.Entity.Users users) {
         return null;
     }
 
     @Override
-    public ObservableList<com.c2306l.myproject.Entity.Users> findAll() {
+    public ObservableList<com.c2306l.javafxe3.Entity.Users> findAll() {
         return null;
     }
 }

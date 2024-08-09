@@ -1,7 +1,7 @@
-package com.c2306l.myproject.Controller;
+package com.c2306l.javafxe3.Controller;
 
-import com.c2306l.myproject.Global.AppProperties;
-import com.c2306l.myproject.Service.AuthenticationService;
+import com.c2306l.javafxe3.Global.AppProperties;
+import com.c2306l.javafxe3.Service.AuthenticationService;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -18,7 +18,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 public class LoginController implements Initializable {
     @FXML private TextField txtUserName;
@@ -51,7 +50,7 @@ public class LoginController implements Initializable {
                     stage.close();
                     //Loading Layout
                     try {
-                        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/c2306l/myproject/layout.fxml"));
+                        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("com/c2306l/javafxe3/layout.fxml"));
                         //fxmlLoader.setLocation();
                         Scene scene = new Scene(fxmlLoader.load(), 800,600 );
                         stage.setTitle("My Project");

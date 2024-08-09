@@ -1,4 +1,4 @@
-package com.c2306l.myproject.IGeneric;
+package com.c2306l.javafxe3.IGeneric;
 
 import javafx.collections.ObservableList;
 

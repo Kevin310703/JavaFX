@@ -1,7 +1,8 @@
-package com.c2306l.myproject.Service;
+package com.c2306l.javafxe3.Service;
 
-import com.c2306l.myproject.Global.AppProperties;
-import com.c2306l.myproject.Model.MySQLConnection;
+import com.c2306l.javafxe3.Global.AppProperties;
+import com.c2306l.javafxe3.Model.MySQLConnection;
+import com.c2306l.javafxe3.Model.Users;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;
@@ -11,7 +12,7 @@ import java.util.Base64;
 
 public class AuthenticationService {
     public static boolean login(String username, String password) {
-        com.c2306l.myproject.Entity.Users user = com.c2306l.myproject.Model.Users.findByUserName(username);
+        com.c2306l.javafxe3.Entity.Users user = Users.findByUserName(username);
         if(user.getPassword().equals(password)) {
             AppProperties.setProperty("user.token",getToken());
             //update token to Users

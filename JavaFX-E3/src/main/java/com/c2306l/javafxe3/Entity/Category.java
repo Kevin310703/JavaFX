@@ -1,4 +1,4 @@
-package com.c2306l.myproject.Entity;
+package com.c2306l.javafxe3.Entity;
 
 public class Category {
     private int id;

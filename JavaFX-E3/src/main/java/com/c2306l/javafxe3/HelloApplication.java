@@ -1,4 +1,4 @@
-package com.c2306l.myproject;
+package com.c2306l.javafxe3;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,7 +10,7 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("login.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("com/c2306l/javafxe3/login.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 350,300 );
         stage.setTitle("Login System");
         stage.setScene(scene);

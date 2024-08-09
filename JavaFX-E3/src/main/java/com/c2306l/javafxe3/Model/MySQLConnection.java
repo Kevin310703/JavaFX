@@ -1,4 +1,4 @@
-package com.c2306l.myproject.Model;
+package com.c2306l.javafxe3.Model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,8 +6,8 @@ import java.sql.SQLException;
 
 public class MySQLConnection {
     private static final String url = "jdbc:mysql://localhost:3306/shop";
-    private static final String user = "app";
-    private static final String password = "MXEydzNlQCM=";
+    private static final String user = "root";
+    private static final String password = "123456=";
     private static Connection conn = null;
     public MySQLConnection(Connection conn){
         MySQLConnection.conn = conn;

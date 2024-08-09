@@ -1,4 +1,4 @@
-package com.c2306l.myproject.Global;
+package com.c2306l.javafxe3.Global;
 
 public class Validator {
 }

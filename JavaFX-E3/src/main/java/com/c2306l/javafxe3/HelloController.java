@@ -1,4 +1,4 @@
-package com.c2306l.myproject;
+package com.c2306l.javafxe3;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
