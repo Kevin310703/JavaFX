@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane prefHeight="1080" prefWidth="1920"
+           xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.aptech.javafxe2.Controller.CategoryController">
+    <HBox>
+        <TitledPane animated="false" prefHeight="396.0" prefWidth="602.0" text="Category List">
+            <VBox>
+                <TextField fx:id="keyword" prefWidth="-Infinity" promptText="Please Enter Code or Name" />
+                <TableView fx:id="categories" prefHeight="273.0" prefWidth="534.0">
+                    <columns>
+                        <TableColumn fx:id="cid" prefWidth="75.0" text="ID" visible="false" />
+                        <TableColumn fx:id="ccode" prefWidth="75.0" text="Code" />
+                        <TableColumn fx:id="cname" prefWidth="175.0" text="Name" />
+                        <TableColumn fx:id="cdes" prefWidth="375.0" text="Description" />
+                    </columns>
+                </TableView>
+            </VBox>
+
+        </TitledPane>
+        <TitledPane prefWidth="602.0" text="Add New Category">
+
+        </TitledPane>
+    </HBox>
+</StackPane>

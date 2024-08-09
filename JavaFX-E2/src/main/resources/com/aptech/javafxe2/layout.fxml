@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1080" maxWidth="1920" prefHeight="1080" prefWidth="1920" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.aptech.javafxe2.Controller.LayoutController">
+    <BorderPane maxHeight="1080" maxWidth="1920" prefHeight="-Infinity" prefWidth="-Infinity">
+        <top>
+            <MenuBar maxHeight="35" minHeight="35" minWidth="1920" maxWidth="1920" prefHeight="35" prefWidth="1920" BorderPane.alignment="BOTTOM_CENTER">
+                <Menu text="Category">
+                    <MenuItem fx:id="mnCategoryList" text="List" />
+                    <MenuItem text="Add" />
+                </Menu>
+                <Menu text="Product">
+                    <MenuItem text="List" />
+                    <MenuItem text="Add" />
+                </Menu>
+            </MenuBar>
+        </top>
+        <right>
+        </right>
+        <center>
+            <StackPane maxHeight="600" minHeight="600" maxWidth="1920" fx:id="contentPane">
+
+            </StackPane>
+        </center>
+        <left>
+
+        </left>
+        <bottom>
+            <VBox prefWidth="-Infinity" minHeight="35" maxHeight="35">
+                <Label text="Copyright @C2306L 2024" />
+            </VBox>
+        </bottom>
+    </BorderPane>
+</AnchorPane>
